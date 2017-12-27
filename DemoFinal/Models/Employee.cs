@@ -9,5 +9,6 @@ namespace DemoFinal.Models
     {
         public int EmpId { get; set; }
         public string EmpName { get; set; }
+        public string address { get; set; }
     }
 }
