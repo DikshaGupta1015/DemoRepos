@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function Validate() {
+            var fn = document.getElementById("txtFN").value;
+            var ln = document.getElementById("txtLN").value;
+            var age = document.getElementById("txtAge").value;
+            a = parseInt(age,10);
+            var email = document.forms["myForm"]["txtEmail"].value;
+            var pc = document.forms["myForm"]["txtPC"].value;
+
+            if (fn == "") {
+                alert("First Name must be filled");
+                return false;
+            }
+
+            if (ln == "") {
+                alert("Last Name must be filled");
+                return false;
+            }
+
+            if (isNaN(a) ||a < 18 || a > 90) {
+                alert("Please Enter a valid age");
+                return false;
+            }
+
+            if ((form.gender[0].checked == false) && (form.gender[1].checked == false)) {
+                alert("Please choose your Gender: Male or Female");
+                return false;
+            }
+
+            if ((form.Hobbies[0].checked == false) && (form.Hobbies[1].checked == false)) {
+                alert("Please choose your Gender: Male or Female");
+                return false;
+            }
+
+            if (email == "") {
+                alert("Please Enter your email id");
+                return false;
+            }
+
+            else {
+                alert("Your Details are saved Successfully");
+                return true;
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Employee Details</h1>
+    <form name="myForm" onsubmit="return Validate()" method="post">
+        Enter your First Name:<input type="text" id="txtFN" /><br />
+        Enter your Last Name:<input type="text" id="txtLN" /><br />
+        Enter your Age:<input type="text" name="txtAge" /><br />
+        Enter your Gender:<input type="radio" name="gender" value="Male" />Male&nbsp;&nbsp;
+        <input type="radio" name="gender" value="Female" />Female
+        <br />
+        Enter your Hobbies:<input type="checkbox" name="Hobbies" value="Paint" />Paint<br />
+        <input type="checkbox" name="Hobbies" value="Dance" />Dance<br />
+        <input type="checkbox" name="Hobbies" value="Act" />Act<br />
+        Enter your Email:<input type="email" name="txtEmail" /><br />
+        Enter your Promotion Code:<input type="text" name="txtPC" /><br />
+        <input type="submit" value="Submit" />&nbsp;&nbsp;<input type="reset" value="Reset"><br />
+    </form>
+</body>
+</html>

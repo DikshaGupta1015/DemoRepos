@@ -158,12 +158,28 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\DikshaGupta_Day2_MVC.txt" />
+    <Content Include="Models\EmployeeClass.PNG" />
+    <Content Include="Models\HomeController.PNG" />
+    <Content Include="Models\HomeControllerForDoc.PNG" />
+    <Content Include="Models\HomeControllerNew.PNG" />
+    <Content Include="Models\HtmlValidation.html" />
+    <Content Include="Models\OutputScreen.PNG" />
+    <Content Include="Models\RouteConfig.PNG" />
+    <Content Include="Models\UrlOfGitHubGroup5.PNG" />
+    <Content Include="Models\ValidationInJS.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="QuickStart\Quickstart.zip" />
+    <Content Include="Models\AngularJs2.docx" />
+    <Content Include="Models\Bootstrap.docx" />
+    <Content Include="Models\Day5Validations.docx" />
+    <Content Include="Models\Doc1.docx" />
+    <Content Include="Models\File_1.zip" />
+    <Content Include="Models\Group5GitDoc.docx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

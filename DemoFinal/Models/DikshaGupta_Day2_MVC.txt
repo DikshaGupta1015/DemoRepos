@@ -1,0 +1,33 @@
+=================================================
+          MVC Training (Day 2)
+=================================================
+
+*Web services allows us to use create SOAP services
+
+*Web API allows to use Restful services, http services
+
+*Model contains data and its processing logic
+
+*Drawback of ASP .Net
+ -Unnecessary loading of page lifecycle
+ -No control over html
+ -It does not support methods for http
+
+*Methods for http are get,put,post,delete
+
+*In ASP .Net MVC request is received by Controllers.
+
+*After the Controller receives the request, it finds if we need data, view or part of view
+
+*SPA-Single Page Application.
+
+*In SPA a Page is initially loaded, data is retrieved using Web API, partial pages are loaded, and this reduces flickering.
+
+*AJAX is the method by which partial pages are uploaded and this process takes place in an asynchronous way.
+
+*ASP .Net MVC - server side
+
+*SPA - client side.
+
+*SPA can be developed using Javascript.
+

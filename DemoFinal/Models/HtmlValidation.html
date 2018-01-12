@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function checkData() {
+            var fn = document.getElementById("txtfname").value;
+            var sn = document.getElementById("txtlName").value;
+            var age = document.getElementById("txtage").value;
+            var email = document.getElementById("txtEmail").value;
+            var choice1 = document.getElementById("Cricket").checked;
+            var choice2 = document.getElementById("Chess").checked;
+            var choice3 = document.getElementById("Badminton").checked;
+            var choice4 = document.getElementById("Football").checked;
+
+            if (fn == "") {
+                Error = "You must enter a first name.";
+            }
+            else
+                Error = "";
+            document.getElementById("fn").innerHTML = Error;
+
+
+            if (sn == "") {
+                Error = "You must enter a Last name.";
+            }
+            else
+                Error = "";
+            document.getElementById("sn").innerHTML = Error;
+
+            if (age <= 18 || age >= 120) {
+                Error = "Age Must be between 18 and 120";
+            }
+            else
+                Error = "";
+            document.getElementById("age").innerHTML = Error;
+
+            if (!(email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/))) {
+                Error = "Enter valid Email Id";
+            }
+            else
+                Error = "";
+            document.getElementById("email").innerHTML = Error;
+
+
+            if ((choice1 == "") && (choice2 == "") && (choice3 == "") && (choice4 == "")) {
+                Error = "Choose at least one Game";
+            }
+            else
+                Error = "";
+            document.getElementById("game").innerHTML = Error;
+        }
+
+    </script>
+
+</head >
+<body>
+    <h1 align="center">Demo WebPage</h1>
+    <table cellpadding="2" cellspacing="4" align="center">
+
+        <tr>
+            <td>First Name</td>
+            <td>:</td>
+            <td><input type="text" id="txtfname" /></td>
+            <td><p id="fn"></p></td>
+        </tr>
+
+        <tr>
+            <td>Last Name</td>
+            <td>:</td>
+            <td><input type="text" id="txtlName" /></td>
+            <td><p id="sn"></p></td>
+        </tr>
+
+        <tr>
+            <td>Age</td>
+            <td>:</td>
+            <td><input type="text" id="txtage" /></td>
+            <td><p id="age"></p></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>:</td>
+            <td>
+                <input type="radio" name="gender" value="male" checked> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Hobbies</td>
+            <td>:</td>
+            <td>
+                <input type="checkbox" name="hobbies" id="Cricket"> Cricket
+                <input type="checkbox" name="hobbies" id="Chess"> Chess<br />
+                <input type="checkbox" name="hobbies" id="Badminton"> Badminton
+                <input type="checkbox" name="hobbies" id="Football"> FootBall
+            </td>
+               <td><p id="game"></p></td>
+        </tr>
+
+        <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td><input type="text" id="txtEmail" /></td>
+            <td><p id="email"></p></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><input type="button" value="submit" onclick="checkData();" /> </td>
+        </tr>
+    </table>
+
+</body>
+</html >
